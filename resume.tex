@@ -97,13 +97,13 @@ B.Tech in Civil Engineering
 
 \vspace{1pt}
 
-\textbf{Trading Engine --- High-Performance Trading System} | \textit{Rust, Redis}
+\textbf{Trading Engine --- High-Performance Trading System} | \textit{Rust, Redis, PostgreSQL, k6}
 \quad \href{https://github.com/rizzabhdwaj/trading-system/}{GitHub}
 
 \begin{itemize}
-    \item Built a trading engine in Rust focused on low-latency order processing, market data handling, and concurrent execution.
-    \item Designed modular components for order management, matching, and communication between trading services.
-    \item Implemented efficient data structures and concurrency patterns for high-throughput trading workloads.
+    \item Implemented a price-time-priority matching engine in Rust using \texttt{BTreeMap} and \texttt{VecDeque}, supporting limit orders, partial fills, and concurrent order processing.
+    \item Integrated PostgreSQL transactions and deterministic row-level locking to maintain balance consistency during trade settlement.
+    \item Load-tested the trading API with k6 at 100 virtual users, achieving a 0.07\% request failure rate in the measured run.
 \end{itemize}
 
 \vspace{1pt}
@@ -125,15 +125,6 @@ B.Tech in Civil Engineering
     \item Built an interactive platform where users introduce code bugs for an LLM to identify and repair in real time.
     \item Used Docker to sandbox user-submitted code for secure, isolated, and scalable execution.
     \item Built a full-stack Next.js application managing LLM inference, session state, and sandboxed process lifecycle.
-\end{itemize}
-
-\vspace{2pt}
-
-\textbf{Sorting Algorithm Visualizer} | \textit{C, Raylib}
-
-\begin{itemize}
-    \item Built a real-time C/Raylib visualizer showing step-by-step execution of merge sort, quicksort, and heapsort.
-    \item Decoupled rendering from algorithmic state in a frame-rate-controlled loop to demonstrate computational complexity.
 \end{itemize}
 
 \vspace{1pt}
